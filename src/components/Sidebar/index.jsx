@@ -1,4 +1,4 @@
-export default function Sidebar(){
+export default function Sidebar() {
     return (
         <main>
             <div className="drawer drawer-mobile bg-slate-400">
@@ -26,5 +26,5 @@ export default function Sidebar(){
                 </div>
             </div>
         </main>
-    )
+    );
 }

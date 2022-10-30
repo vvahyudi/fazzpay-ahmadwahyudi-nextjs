@@ -52,7 +52,7 @@ export default function SignIn() {
                         </p>
                     </div>
                     <div className="flex flex-col pl-10 pr-20">
-                        <form className="mt-8 mb-0 space-y-4">
+                        <form className="mt-8 mb-0 space-y-4 focus-within:text-primaryblue">
                             <div>
                                 <label htmlFor="email" className="sr-only">
                                     Email
@@ -65,7 +65,7 @@ export default function SignIn() {
                                         placeholder="Enter your e-mail"
                                     />
                                     <span className="absolute inset-y-0 inline-flex items-center left-2 focus-within:text-primaryblue">
-                                        <EnvelopeIcon className="w-5 h-5 text-primaryblue" />
+                                        <EnvelopeIcon className="w-5 h-5 text-grey-400" />
                                     </span>
                                 </div>
                             </div>
@@ -81,7 +81,7 @@ export default function SignIn() {
                                         placeholder="Enter your password"
                                     />
                                     <span className="absolute inset-y-0 inline-flex items-center left-2">
-                                        <LockClosedIcon className="w-5 h-5 text-primaryblue" />
+                                        <LockClosedIcon className="w-5 h-5 text-grey-400" />
                                     </span>
                                     <button
                                         className="absolute inset-y-0 inline-flex items-center right-4"
@@ -89,9 +89,9 @@ export default function SignIn() {
                                     >
                                         {" "}
                                         {showPassword ? (
-                                            <EyeIcon className="w-5 h-5 text-primaryblue" />
+                                            <EyeIcon className="w-5 h-5 text-grey-400" />
                                         ) : (
-                                            <EyeSlashIcon className="w-5 h-5 text-primaryblue" />
+                                            <EyeSlashIcon className="w-5 h-5 text-grey-400" />
                                         )}
                                     </button>
                                 </div>
@@ -111,7 +111,7 @@ export default function SignIn() {
                                 <p className="text-sm text-primarydark pt-2">
                                     Don&apos;t Have any account? Let&apos;s{" "}
                                     <span className="text-primaryblue font-bold">
-                                        <Link href="../SignUp">Sign Up</Link>
+                                        <Link href="../signup">Sign Up</Link>
                                     </span>
                                 </p>
                             </div>

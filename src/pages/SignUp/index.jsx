@@ -62,7 +62,7 @@ export default function SignUp() {
                         </p>
                     </div>
                     <div className="flex flex-col pl-10 pr-20">
-                        <form className="mt-8 mb-0 space-y-4">
+                        <form className="mt-8 mb-0 space-y-4 focus-within:text-primaryblue">
                             <div>
                                 <label htmlFor="firstname" className="sr-only">
                                     First Name
@@ -74,8 +74,8 @@ export default function SignUp() {
                                         className="w-full py-4 pl-12 border-0 border-b-2 border-gray-400 text-sm bg-white focus:border-primaryblue focus:text-primaryblue focus:outline-none focus:ring-0"
                                         placeholder="Enter your first name"
                                     />
-                                    <span className="absolute inset-y-0 inline-flex items-center left-2 focus-within:text-primaryblue">
-                                        <UserIcon className="w-5 h-5 text-primaryblue" />
+                                    <span className="absolute inset-y-0 inline-flex items-center left-2">
+                                        <UserIcon className="w-5 h-5 text-grey-400" />
                                     </span>
                                 </div>
                             </div>
@@ -90,8 +90,8 @@ export default function SignUp() {
                                         className="w-full py-4 pl-12 border-0 border-b-2 border-gray-400 text-sm bg-white focus:border-primaryblue focus:text-primaryblue focus:outline-none focus:ring-0"
                                         placeholder="Enter your last name"
                                     />
-                                    <span className="absolute inset-y-0 inline-flex items-center left-2 focus-within:text-primaryblue">
-                                        <UserIcon className="w-5 h-5 text-primaryblue" />
+                                    <span className="absolute inset-y-0 inline-flex items-center left-2">
+                                        <UserIcon className="w-5 h-5 text-grey-400" />
                                     </span>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@ export default function SignUp() {
                                         placeholder="Enter your e-mail"
                                     />
                                     <span className="absolute inset-y-0 inline-flex items-center left-2 focus-within:text-primaryblue">
-                                        <EnvelopeIcon className="w-5 h-5 text-primaryblue" />
+                                        <EnvelopeIcon className="w-5 h-5 text-grey-400" />
                                     </span>
                                 </div>
                             </div>
@@ -123,7 +123,7 @@ export default function SignUp() {
                                         placeholder="Enter your password"
                                     />
                                     <span className="absolute inset-y-0 inline-flex items-center left-2">
-                                        <LockClosedIcon className="w-5 h-5 text-primaryblue" />
+                                        <LockClosedIcon className="w-5 h-5 text-grey-400" />
                                     </span>
                                     <button
                                         className="absolute inset-y-0 inline-flex items-center right-4"
@@ -131,16 +131,16 @@ export default function SignUp() {
                                     >
                                         {" "}
                                         {showPassword ? (
-                                            <EyeIcon className="w-5 h-5 text-primaryblue" />
+                                            <EyeIcon className="w-5 h-5 text-grey-400" />
                                         ) : (
-                                            <EyeSlashIcon className="w-5 h-5 text-primaryblue" />
+                                            <EyeSlashIcon className="w-5 h-5 text-grey-400" />
                                         )}
                                     </button>
                                 </div>
                             </div>
                             <div className="flex items-center justify-between pt-10 ">
                                 <button className="submit inline-block w-full px-5 py-3 text-sm font-medium text-primarydark bg-primarydark/40  focus:text-white hover:text-white hover:bg-primaryblue focus:bg-primaryblue rounded-lg">
-                                    Log in
+                                    Sign Up
                                 </button>
                             </div>
                             <div className="flex flex-col items-center">

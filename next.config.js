@@ -9,7 +9,7 @@ const nextConfig = {
                 protocol: "https",
                 hostname: "placeimg.com",
                 port: "",
-                pathname: "/*"
+                pathname: "/192/192/people"
             }
         ]
     }

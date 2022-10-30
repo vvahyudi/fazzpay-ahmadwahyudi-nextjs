@@ -3,15 +3,13 @@
 @tailwind utilities;
 
 body {
-    margin: 0;
-    padding: 20px;
     background-color: #e5e5e5;
     height: 100%;
 }
 .container {
+    margin: 0;
     display: flex;
-    padding: 20px 60px 20px 60px;
-    height: 640px;
-    width: 1200px;
-    height: 700px;
+    padding: 20px 40px 20px 40px;
+    height: 100%;
+    width: 100%;
 }

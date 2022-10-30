@@ -23,6 +23,9 @@ module.exports = {
             lg: "0.5rem",
             full: "9999px",
             large: "18px"
+        },
+        container: {
+            center: true
         }
     },
     plugins: [require("daisyui"), require("@tailwindcss/forms")]

@@ -46,7 +46,7 @@ export default function Sidebar() {
                     <li className="text-primarydark text-lg font-semibold">
                         <Link
                             rel="noopener noreferrer"
-                            href="#"
+                            href="/profile"
                             className="flex items-center p-2 space-x-3 rounded-md"
                         >
                             <UserIcon className="w-6 h-6 text-primarydark" />

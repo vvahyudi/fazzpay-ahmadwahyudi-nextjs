@@ -6,9 +6,14 @@ import {
     UserIcon
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 // import Image from "next/image";
 export default function Sidebar() {
+    const router = useRouter();
+    const handleLogout = () => {
+        router.push("/home");
+    };
     return (
         <div className="max-h-[610px] p-3 space-y-2 w-60 bg-white text-primarydark rounded-large drop-shadow-lg">
             <div className="divide-y divide">
@@ -36,7 +41,7 @@ export default function Sidebar() {
                     <li className="text-primarydark text-lg font-semibold">
                         <Link
                             rel="noopener noreferrer"
-                            href="#"
+                            href=""
                             className="flex items-center p-2 space-x-3 rounded-md"
                         >
                             <PlusIcon className="w-6 h-6 text-primarydark" />
@@ -53,16 +58,19 @@ export default function Sidebar() {
                             <span>Profile</span>
                         </Link>
                     </li>
-                    <li className="text-primarydark text-lg font-semibold pt-60 pb-4">
-                        <Link
-                            rel="noopener noreferrer"
-                            href="#"
-                            className="flex items-center p-2 space-x-3 rounded-md"
+                    <Link
+                        rel="noopener noreferrer"
+                        href=""
+                        className="flex items-center p-2 space-x-3 rounded-md"
+                    >
+                        <li
+                            className="text-primarydark text-lg font-semibold pt-60 pb-4"
+                            onClick={handleLogout}
                         >
                             <ArrowRightOnRectangleIcon className="w-6 h-6 text-primarydark" />
                             <span>Logout</span>
-                        </Link>
-                    </li>
+                        </li>
+                    </Link>
                 </ul>
             </div>
         </div>

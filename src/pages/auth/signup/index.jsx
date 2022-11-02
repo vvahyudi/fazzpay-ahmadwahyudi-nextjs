@@ -1,12 +1,22 @@
 import { useState } from "react";
-import Phone2 from "../../assets/img/phone2.png";
-// import AuthBackground from "../../assets/img/authbackground.png";
+import Phone2 from "assets/img/phone2.png";
+// import AuthBackground from "assets/img/authbackground.png";
 import Image from "next/image";
-import { EnvelopeIcon, EyeIcon, EyeSlashIcon, LockClosedIcon } from "@heroicons/react/24/outline";
+import {
+    EnvelopeIcon,
+    EyeIcon,
+    EyeSlashIcon,
+    LockClosedIcon,
+    UserIcon
+} from "@heroicons/react/24/outline";
 import Link from "next/link";
-
-export default function SignIn() {
+export default function SignUp() {
     const [showPassword, setShowPassword] = useState(false);
+    // const [colorInput, SetColorInput] = useState(false);
+    // const handleColorInput = (e) => {
+    //     e.preventDefault();
+    //     SetColorInput(!colorInput);
+    // };
 
     const handleShowPassword = (e) => {
         e.preventDefault();
@@ -54,6 +64,38 @@ export default function SignIn() {
                     <div className="flex flex-col pl-10 pr-20">
                         <form className="mt-8 mb-0 space-y-4 focus-within:text-primaryblue">
                             <div>
+                                <label htmlFor="firstname" className="sr-only">
+                                    First Name
+                                </label>
+                                <div className="relative">
+                                    <input
+                                        type="text"
+                                        name="firstname"
+                                        className="w-full py-4 pl-12 border-0 border-b-2 border-gray-400 text-sm bg-white focus:border-primaryblue focus:text-primaryblue focus:outline-none focus:ring-0"
+                                        placeholder="Enter your first name"
+                                    />
+                                    <span className="absolute inset-y-0 inline-flex items-center left-2">
+                                        <UserIcon className="w-5 h-5 text-grey-400" />
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <label htmlFor="lastname" className="sr-only">
+                                    Last Name
+                                </label>
+                                <div className="relative">
+                                    <input
+                                        type="text"
+                                        name="lastname"
+                                        className="w-full py-4 pl-12 border-0 border-b-2 border-gray-400 text-sm bg-white focus:border-primaryblue focus:text-primaryblue focus:outline-none focus:ring-0"
+                                        placeholder="Enter your last name"
+                                    />
+                                    <span className="absolute inset-y-0 inline-flex items-center left-2">
+                                        <UserIcon className="w-5 h-5 text-grey-400" />
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
                                 <label htmlFor="email" className="sr-only">
                                     Email
                                 </label>
@@ -77,7 +119,7 @@ export default function SignIn() {
                                     <input
                                         type={showPassword ? "text" : "password"}
                                         name="password"
-                                        className="w-full p-4 pl-12 border-0 border-b-2 border-gray-400 text-sm  focus:border-primaryblue focus:text-primaryblue focus:outline-none focus:ring-0"
+                                        className="w-full p-4 pl-12 border-0 border-b-2 border-gray-400 text-sm  focus:border-primaryblue focus:text-primaryblue focus:outline-none focus:ring-0 invalid:border-primaryred"
                                         placeholder="Enter your password"
                                     />
                                     <span className="absolute inset-y-0 inline-flex items-center left-2">
@@ -96,22 +138,16 @@ export default function SignIn() {
                                     </button>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-end">
-                                <p className="text-sm text-primarydark pt-2 pb-20 ">
-                                    Forgot Password ?
-                                </p>
-                            </div>
-
-                            <div className="flex items-center justify-between">
-                                <button className="submit inline-block w-full px-5 py-3 text-sm font-medium bg-primarydark/40 text-primarydark focus:text-white hover:text-white hover:bg-primaryblue focus:bg-primaryblue rounded-lg">
-                                    Log in
+                            <div className="flex items-center justify-between pt-10 ">
+                                <button className="submit inline-block w-full px-5 py-3 text-sm font-medium text-primarydark bg-primarydark/40  focus:text-white hover:text-white hover:bg-primaryblue focus:bg-primaryblue rounded-lg">
+                                    Sign Up
                                 </button>
                             </div>
                             <div className="flex flex-col items-center">
                                 <p className="text-sm text-primarydark pt-2">
-                                    Don&apos;t Have any account? Let&apos;s{" "}
+                                    Already have an account? Let&apos;s{" "}
                                     <span className="text-primaryblue font-bold">
-                                        <Link href="../signup">Sign Up</Link>
+                                        <Link href="/">Login</Link>
                                     </span>
                                 </p>
                             </div>

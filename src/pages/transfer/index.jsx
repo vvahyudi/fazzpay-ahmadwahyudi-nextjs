@@ -1,6 +1,6 @@
-import Navbar from "../../components/navbar";
-import SectionTx from "../../components/SectionTx";
-import Sidebar from "../../components/Sidebar";
+import Navbar from "components/navbar";
+import SectionTx from "components/SectionTx";
+import Sidebar from "components/Sidebar";
 
 export default function TransferMoney() {
     return (

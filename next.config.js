@@ -11,7 +11,12 @@ const nextConfig = {
                 port: "",
                 pathname: "/192/192/people"
             }
-        ]
+        ],
+        domains: ["res.cloudinary.com"]
+    },
+    env: {
+        URL_BACKEND: "https://fazzpay-rose.vercel.app",
+        URL_CLOUDINARY: ""
     }
 };
 

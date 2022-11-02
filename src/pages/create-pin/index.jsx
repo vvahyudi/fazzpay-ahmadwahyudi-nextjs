@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import Phone2 from "../../assets/img/phone2.png";
+import Phone2 from "assets/img/phone2.png";
 // import AuthBackground from "../../assets/img/authbackground.png";
 import Image from "next/image";
 // import {

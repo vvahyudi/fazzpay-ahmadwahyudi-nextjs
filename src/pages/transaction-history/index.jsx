@@ -1,7 +1,7 @@
 // import CardTxHistory from "../../components/CardTxHistory";
-import Navbar from "../../components/navbar";
-import SectionTxHistory from "../../components/SectionTxHistory";
-import Sidebar from "../../components/Sidebar";
+import Navbar from "components/navbar";
+import SectionTxHistory from "components/SectionTxHistory";
+import Sidebar from "components/Sidebar";
 
 export default function TxHistory() {
     return (

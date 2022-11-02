@@ -1,6 +1,6 @@
-import Navbar from "../../components/navbar";
-import SectionDetailProfile from "../../components/SectionDetailProfile";
-import Sidebar from "../../components/Sidebar";
+import Navbar from "components/navbar";
+import SectionDetailProfile from "components/SectionDetailProfile";
+import Sidebar from "components/Sidebar";
 
 export default function Profile() {
     return (

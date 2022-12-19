@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Phone2 from "assets/img/phone2.png";
-// import AuthBackground from "../../assets/img/authbackground.png";
 import Image from "next/image";
 import { EnvelopeIcon, EyeIcon, EyeSlashIcon, LockClosedIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import axiosClient from "utils/axios";
 
 export default function SignIn() {
     const [form, setForm] = useState();
@@ -11,7 +11,14 @@ export default function SignIn() {
     const handleChangeText = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
-    const handleSubmit = () => {};
+    const handleSubmit = async () => {
+        try {
+            const result = await axiosClient.post("auth/login", form);
+            console.log(result);
+        } catch (error) {
+            console.log(error);
+        }
+    };
     const handleShowPassword = (e) => {
         e.preventDefault();
         setShowPassword(!showPassword);

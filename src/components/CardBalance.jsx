@@ -1,8 +1,8 @@
 import { ArrowUpIcon, PlusIcon } from "@heroicons/react/24/outline";
 
-export default function SectionBalance() {
+export default function CardBalance() {
     return (
-        <div className="flex flex-row justify-between px-10 h-40 py-4 ml-5 md:w-auto rounded-large bg-primaryblue drop-shadow-lg">
+        <div className="flex flex-row justify-between px-10 h-40 py-4 ml-5 mb-5 md:w-auto rounded-large bg-primaryblue drop-shadow-lg">
             <div className="flex flex-col justify-evenly items-start ">
                 <h1 className="text-sm md:text-lg text-white font-light tracking-wide">Balance</h1>
                 <h1 className="text-2xl text-white font-semibold leading-none md:text-3xl">

@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export default function SectionTxHistory() {
     return (
-        <div className="flex flex-row w-[1200px] xl:w-[960px] sm:w-[700px] md:w-[840px] lg:w-[840px]">
+        <div className="flex flex-row">
             <div className="px-6 basis-4/5 h-[610px] py-6 mx-10 rounded-large bg-white drop-shadow-lg gap-4 ">
                 <div className="flex flex-row justify-between">
-                    <div className="flex flex-col justify-start items-start w-[560px] h-16 gap-8">
+                    <div className="flex flex-col justify-start items-start h-16 gap-8">
                         <div className="flex flex-row justify-between w-full px-3">
                             <h3 className="text-md font-bold">Transaction History</h3>
                             <h3 className="text-xs font-thin text-primaryblue">

@@ -3,6 +3,9 @@
 module.exports = {
     content: ["./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
+        container: {
+            center: true
+        },
         extend: {
             colors: {
                 primaryblue: "#6379F4",
@@ -23,9 +26,6 @@ module.exports = {
             lg: "0.5rem",
             full: "9999px",
             large: "18px"
-        },
-        container: {
-            center: true
         }
     },
     plugins: [require("daisyui"), require("@tailwindcss/forms")]

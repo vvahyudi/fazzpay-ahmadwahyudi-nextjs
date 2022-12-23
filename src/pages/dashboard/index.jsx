@@ -1,27 +1,29 @@
+import { Nunito } from "@next/font/google";
+const nunito = Nunito();
 import CardGraphic from "components/CardGraph";
-import CardTxHistory from "components/CardTxHistory";
-import Navbar from "components/navbar";
-import SectionBalance from "components/SectionBalance";
+import CardTxHistory from "components/CardHistory";
+import Navbar from "components/Navbar";
+import CardBalance from "components/CardBalance";
 import Sidebar from "components/Sidebar";
 import Layout from "layout";
 export default function Dashboard() {
     return (
         <>
-            <Navbar />
+            <div className={`columns-1 ${nunito.className}`}>
+                <Navbar />
+            </div>
             <Layout>
-                <div className="flex flex-row">
-                    <div className="md:flex hidden flex-col">
-                        <div className="flex-row basis-2/5">
-                            <Sidebar />
+                <div className="columns-1 w-1/5">
+                    <Sidebar />
+                </div>
+                <div className="columns-1 w-4/5">
+                    <CardBalance />
+                    <div className="flex flex-row gap-6">
+                        <div className="basis-3/5">
+                            <CardGraphic />
                         </div>
-                    </div>
-                    <div className="flex flex-row basis-3/5 h-auto">
-                        <div className="flex flex-col max-w-full">
-                            <SectionBalance />
-                            <div className="flex h-full flex-col lg:flex-row  w-full">
-                                <CardGraphic />
-                                <CardTxHistory />
-                            </div>
+                        <div className="basis-2/5">
+                            <CardTxHistory />
                         </div>
                     </div>
                 </div>

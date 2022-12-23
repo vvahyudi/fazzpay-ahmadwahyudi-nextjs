@@ -1,4 +1,4 @@
-import Navbar from "components/navbar";
+import Navbar from "components/Navbar";
 import SectionProfile from "components/SectionProfile";
 // import SectionTx from "../../components/SectionTx";
 import Sidebar from "components/Sidebar";

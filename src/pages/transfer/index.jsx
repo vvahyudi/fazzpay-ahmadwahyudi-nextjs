@@ -1,4 +1,4 @@
-import Navbar from "components/navbar";
+import Navbar from "components/Navbar";
 import SectionTx from "components/SectionTx";
 import Sidebar from "components/Sidebar";
 
@@ -6,7 +6,7 @@ export default function TransferMoney() {
     return (
         <>
             <Navbar />
-            <main className="container sm:h-[1050px] lg:h-[650px] md:h-[1050px]">
+            <main className="container">
                 <div className="flex flex-row">
                     <div className="lg:flex hidden flex-col">
                         <div className="flex-row basis-2/5">

@@ -1,5 +1,5 @@
 // import CardTxHistory from "../../components/CardTxHistory";
-import Navbar from "components/navbar";
+import Navbar from "components/Navbar";
 import SectionTxHistory from "components/SectionTxHistory";
 import Sidebar from "components/Sidebar";
 
